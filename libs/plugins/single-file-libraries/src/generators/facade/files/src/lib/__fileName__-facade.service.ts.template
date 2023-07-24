@@ -1,0 +1,18 @@
+import { computed, Injectable, Provider, signal } from '@angular/core';
+
+interface State {
+  someProp: unknown;
+}
+
+const initialState: Readonly<State> = {
+  someProp: null,
+};
+
+export const provide<%=className%>FacadeService = (): EnvironmentProviders =>
+  makeEnvironmentProviders([provide<%=className%>FacadeService]);
+
+@Injectable()
+export class <%=className%>FacadeService {
+  private readonly stateSignal = signal(initialState);
+  public readonly somePropSignal = computed(() => this.stateSignal().someProp);
+}

@@ -9,7 +9,7 @@
           "error",
           {
             "type": "attribute",
-            "prefix": "ngStarWars",
+            "prefix": "ngExample",
             "style": "camelCase"
           }
         ],

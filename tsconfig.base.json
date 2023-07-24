@@ -14,7 +14,46 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@ng-star-wars/people/data-services/people": [
+        "libs/people/data-services/people/src/index.ts"
+      ],
+      "@ng-star-wars/people/dumb-components/table": [
+        "libs/people/dumb-components/table/src/index.ts"
+      ],
+      "@ng-star-wars/people/facades/people": [
+        "libs/people/facades/people/src/index.ts"
+      ],
+      "@ng-star-wars/people/routes/people": [
+        "libs/people/routes/people/src/index.ts"
+      ],
+      "@ng-star-wars/people/smart-components/search": [
+        "libs/people/smart-components/search/src/index.ts"
+      ],
+      "@ng-star-wars/sfl": ["libs/plugins/single-file-libraries/src/index.ts"],
+      "@ng-star-wars/shared/dumb-components/navbar": [
+        "libs/shared/dumb-components/navbar/src/index.ts"
+      ],
+      "@ng-star-wars/shared/dumb-components/searchbar": [
+        "libs/shared/dumb-components/searchbar/src/index.ts"
+      ],
+      "@ng-star-wars/shared/models/person": [
+        "libs/shared/models/person/src/index.ts"
+      ],
+      "@ng-star-wars/shared/models/species": [
+        "libs/shared/models/species/src/index.ts"
+      ],
+      "@ng-star-wars/shared/services/search": [
+        "libs/shared/services/search/src/index.ts"
+      ],
+      "@ng-star-wars/shared/utils/base-url-token": [
+        "libs/shared/utils/base-url-token/src/index.ts"
+      ],
+      "@ng-star-wars/shared/utils/primeng": [
+        "libs/shared/utils/primeng/src/index.ts"
+      ],
+      "sfl": ["libs/plugins/single-file-libraries/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
