@@ -1,0 +1,7 @@
+{
+  "$schema": "../../../../node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "../../../../dist/libs/species/routes/species",
+  "lib": {
+    "entryFile": "src/index.ts"
+  }
+}

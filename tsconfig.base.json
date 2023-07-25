@@ -49,8 +49,26 @@
       "@ng-star-wars/shared/utils/base-url-token": [
         "libs/shared/utils/base-url-token/src/index.ts"
       ],
+      "@ng-star-wars/shared/utils/delay-if-debug": [
+        "libs/shared/utils/delay-if-debug/src/index.ts"
+      ],
       "@ng-star-wars/shared/utils/primeng": [
         "libs/shared/utils/primeng/src/index.ts"
+      ],
+      "@ng-star-wars/species/data-services/species": [
+        "libs/species/data-services/species/src/index.ts"
+      ],
+      "@ng-star-wars/species/dumb-components/table": [
+        "libs/species/dumb-components/table/src/index.ts"
+      ],
+      "@ng-star-wars/species/facades/species": [
+        "libs/species/facades/species/src/index.ts"
+      ],
+      "@ng-star-wars/species/routes/species": [
+        "libs/species/routes/species/src/index.ts"
+      ],
+      "@ng-star-wars/species/smart-components/search": [
+        "libs/species/smart-components/search/src/index.ts"
       ],
       "sfl": ["libs/plugins/single-file-libraries/src/index.ts"]
     }

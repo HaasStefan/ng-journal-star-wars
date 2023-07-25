@@ -1,4 +1,4 @@
-import { computed, Injectable, Provider, signal } from '@angular/core';
+import { computed, makeEnvironmentProviders, EnvironmentProviders,  Injectable, signal } from '@angular/core';
 
 interface State {
   someProp: unknown;
@@ -9,10 +9,10 @@ const initialState: Readonly<State> = {
 };
 
 export const provide<%=className%>FacadeService = (): EnvironmentProviders =>
-  makeEnvironmentProviders([provide<%=className%>FacadeService]);
+  makeEnvironmentProviders([<%=className%>FacadeService]);
 
 @Injectable()
 export class <%=className%>FacadeService {
   private readonly stateSignal = signal(initialState);
-  public readonly somePropSignal = computed(() => this.stateSignal().someProp);
+  readonly somePropSignal = computed(() => this.stateSignal().someProp);
 }

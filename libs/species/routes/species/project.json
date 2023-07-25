@@ -1,0 +1,50 @@
+{
+  "name": "species-routes-species",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/species/routes/species/src",
+  "prefix": "ng-star-wars",
+  "tags": ["type:route"],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/species/routes/species/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/species/routes/species/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/species/routes/species/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/species/routes/species/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/species/routes/species/**/*.ts",
+          "libs/species/routes/species/**/*.html"
+        ]
+      }
+    }
+  }
+}

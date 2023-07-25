@@ -24,7 +24,7 @@ export class SearchbarComponent implements OnInit {
   private readonly fb = inject(FormBuilder);
   readonly control = this.fb.nonNullable.control('');
   readonly search$ = this.control.valueChanges.pipe(
-    debounceTime(800),
+    debounceTime(300),
     distinctUntilChanged(),
     takeUntilDestroyed()
   );

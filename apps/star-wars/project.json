@@ -4,16 +4,22 @@
   "projectType": "application",
   "prefix": "ng-star-wars",
   "sourceRoot": "apps/star-wars/src",
-  "tags": ["type:app"],
+  "tags": [
+    "type:app"
+  ],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/star-wars",
         "index": "apps/star-wars/src/index.html",
         "main": "apps/star-wars/src/main.ts",
-        "polyfills": ["zone.js"],
+        "polyfills": [
+          "zone.js"
+        ],
         "tsConfig": "apps/star-wars/tsconfig.app.json",
         "assets": [
           "apps/star-wars/src/favicon.ico",
@@ -49,7 +55,8 @@
           "vendorChunk": true,
           "extractLicenses": false,
           "sourceMap": true,
-          "namedChunks": true
+          "namedChunks": true,
+          "fileReplacements": []
         }
       },
       "defaultConfiguration": "production"
@@ -74,7 +81,9 @@
     },
     "lint": {
       "executor": "@nx/linter:eslint",
-      "outputs": ["{options.outputFile}"],
+      "outputs": [
+        "{options.outputFile}"
+      ],
       "options": {
         "lintFilePatterns": [
           "apps/star-wars/**/*.ts",
@@ -84,7 +93,9 @@
     },
     "test": {
       "executor": "@nx/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "outputs": [
+        "{workspaceRoot}/coverage/{projectRoot}"
+      ],
       "options": {
         "jestConfig": "apps/star-wars/jest.config.ts",
         "passWithNoTests": true

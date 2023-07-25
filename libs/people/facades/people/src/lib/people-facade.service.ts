@@ -29,7 +29,7 @@ export class PeopleFacadeService {
   private readonly destroyRef = inject(DestroyRef);
 
   private readonly stateSignal = signal(initialState);
-  public readonly peopleSignal = computed(() => this.stateSignal().people);
+  readonly peopleSignal = computed(() => this.stateSignal().people);
   readonly loadingSignal = signal(false);
 
   constructor() {

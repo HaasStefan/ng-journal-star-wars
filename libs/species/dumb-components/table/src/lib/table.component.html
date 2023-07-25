@@ -1,0 +1,24 @@
+<p-table [value]="speciesSignal()" [rowHover]="true">
+  <ng-template pTemplate="header">
+    <tr>
+      <th>Name</th>
+      <th>Height (avg)</th>
+      <th>Lifespan (avg)</th>
+      <th>Classification</th>
+      <th>Skin Colors</th>
+      <th>Hair Colors</th>
+      <th>Eye Colors</th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-species>
+    <tr>
+      <td>{{ species.name }}</td>
+      <td>{{ species.average_height }}</td>
+      <td>{{ species.average_lifespan }}</td>
+      <td>{{ species.classification }}</td>
+      <td>{{ species.skin_colors }}</td>
+      <td>{{ species.hair_colors }}</td>
+      <td>{{ species.eye_colors }}</td>
+    </tr>
+  </ng-template>
+</p-table>

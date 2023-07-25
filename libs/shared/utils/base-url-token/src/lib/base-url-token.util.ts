@@ -1,6 +1,8 @@
 import { InjectionToken } from '@angular/core';
 
+export const DEBUG = true;
+
 export const BaseUrlToken = new InjectionToken<string>('baseUrl', {
   providedIn: 'root',
-  factory: () => 'https://swapi.dev/api/',
+  factory: () => DEBUG ? '/assets/swapi' : 'https://swapi.dev/api/',
 });
